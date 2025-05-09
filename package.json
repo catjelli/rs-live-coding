@@ -1,0 +1,20 @@
+{
+  "name": "1_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch style/scss/style.scss:style/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catjelli/rs-live-coding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catjelli/rs-live-coding/issues"
+  },
+  "homepage": "https://github.com/catjelli/rs-live-coding#readme",
+  "description": ""
+}
