@@ -1,1 +1,5 @@
-@use 'base/typography';
+@use "utils/variables";
+@use "base/global";
+@use "base/typography";
+@use "base/layout";
+@use "components/header";
