@@ -1,4 +1,6 @@
+@use "../utils/constants" as *;
+
 .wrapper {
   margin: 0 auto;
-  width: 1196px;
+  max-width: $desktop-width;
 }
