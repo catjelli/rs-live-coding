@@ -1,0 +1,33 @@
+@use "../utils/constants" as *;
+
+.button {
+    padding: 11px 27px 13px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button--bordered {
+    color: $color-button-primary;
+    background-color: $color-light;
+    border: 1px solid $color-button-secondary;
+}
+
+.button--colored {
+    color: $color-light;
+    background-color: $color-accent;
+    border: 1px solid $color-accent;
+}
+
+.button--colored:hover {
+    background-color: $color-button-hover;
+    border-color: $color-button-hover;
+}
+
+.button--bordered:hover {
+    background-color: $color-button-secondary;
+    border-color: $color-button-secondary;
+}
