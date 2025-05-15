@@ -169,4 +169,19 @@ h3 {
   background: #ffeee1;
 }
 
+.promo__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.promo__content {
+  padding-right: 67px;
+}
+
+.promo__buttons > button {
+  margin-right: 44px;
+}
+
 /*# sourceMappingURL=style.css.map */
