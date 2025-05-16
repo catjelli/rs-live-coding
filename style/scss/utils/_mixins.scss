@@ -1,0 +1,8 @@
+@use "../utils/constants" as *;
+
+@mixin font ($size, $height, $weight, $style: normal) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+    font-style: $style;
+}

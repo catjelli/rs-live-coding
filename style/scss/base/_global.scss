@@ -1,10 +1,12 @@
+@use "../utils/mixins" as *;
+
 html {
   font-size: 10px;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif; 
+  @include font(1.6rem, 2.6rem, 400);
 }
 
 a {
@@ -17,24 +19,15 @@ p {
 
 h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 4.4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 5.4rem;
+  @include font(4.4rem, 5.4rem, 700);
 }
 
 h2 {
-  font-size: 3.4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  @include font(3.4rem, normal, 700);
 }
 
 h3 {
-  font-size: 2.4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 3.4rem;
+  @include font(2.4rem, 3.4rem, 700);
 }
 
 .visually-hidden {
