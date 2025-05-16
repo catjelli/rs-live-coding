@@ -1,3 +1,7 @@
+.logo-path, .button {
+  transition: all 0.3s ease-out;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url(../../../assets/fonts/Poppins-Regular.woff) format("woff");
@@ -110,7 +114,6 @@ h3 {
   line-height: normal;
   border-radius: 4px;
   cursor: pointer;
-  transition: all 0.3s;
 }
 
 .button--bordered {
@@ -133,6 +136,14 @@ h3 {
 .button--bordered:hover {
   background-color: #bcd0e5;
   border-color: #bcd0e5;
+}
+
+.logo-path {
+  cursor: pointer;
+}
+
+.logo-svg:hover .logo-path {
+  fill: #ff9900;
 }
 
 .header {

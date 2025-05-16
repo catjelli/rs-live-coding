@@ -1,8 +1,11 @@
 @use "utils/constants";
+@use "utils/mixins";
+@use "utils/placeholders";
 @use "base/typography";
 @use "base/global";
 @use "base/layout";
 @use "base/buttons";
+@use "base/logo";
 @use "components/header";
 @use "components/contact-us";
 @use "components/promo";

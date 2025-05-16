@@ -1,0 +1,14 @@
+@use "../utils/constants" as *;
+@use "../utils/placeholders" as *;
+@use "../utils/mixins" as *;
+
+.logo-path {
+  @extend %transition;
+  cursor: pointer;
+}
+
+.logo-svg:hover {
+  .logo-path {
+    fill: $color-accent;
+  }
+}
