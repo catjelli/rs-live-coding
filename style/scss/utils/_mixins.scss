@@ -1,3 +1,4 @@
+@use "../utils/placeholders" as *;
 @use "../utils/constants" as *;
 
 @mixin font ($size, $height, $weight, $style: normal) {
@@ -5,4 +6,13 @@
     line-height: $height;
     font-weight: $weight;
     font-style: $style;
+}
+
+@mixin columns ($width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    > * {
+        flex-basis: $width;
+    }
 }

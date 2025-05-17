@@ -3,7 +3,8 @@
 @use "../utils/constants" as *;
 
 .button {
-  padding: 11px 27px 13px;
+  padding: 9px 25px 10px;
+  font-size: 1.6rem;
   font-weight: 600;
   line-height: normal;
   border-radius: 4px;
@@ -29,16 +30,5 @@
       background-color: $color-button-hover;
       border-color: $color-button-hover;
     }
-  }
-}
-
-.link-button {
-  color: $color-accent;
-  text-decoration: solid underline;
-  @extend %transition;
-  @extend %font-additional;
-
-  &:hover {
-    color: $color-button-hover;
   }
 }

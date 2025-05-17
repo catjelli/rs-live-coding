@@ -22,6 +22,19 @@
 }
 
 .promo__button {
-  padding: 14px 42px;
-  margin-right: 44px;
+  font: inherit;
+  padding: 13px 41px;
+  margin-right: 42px;
+  font-weight: 700;
+}
+
+.promo__link {
+  color: $color-accent;
+  text-decoration: solid underline;
+  @extend %transition;
+  @extend %font-additional;
+
+  &:hover {
+    color: $color-button-hover;
+  }
 }

@@ -6,12 +6,10 @@
   display: flex;
   align-items: center;
   gap: 27px;
-  //   justify-content: space-between;
-  //   width: 303px;
 }
 
 .navigation__link {
-  padding: 0 10px;
+  padding: 0 10px 0 0;
   color: $color-header-primary;
   @include font(1.5rem, 2.8rem, 400);
 

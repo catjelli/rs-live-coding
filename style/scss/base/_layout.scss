@@ -6,3 +6,11 @@
   margin: 0 auto;
   max-width: $desktop-width;
 }
+
+.layout-4-columns {
+  @include columns(22%);
+}
+
+.layout-3-columns {
+  @include columns(31%);
+}
