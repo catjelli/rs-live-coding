@@ -1,11 +1,13 @@
 @use "../utils/mixins" as *;
+@use "../utils/placeholders" as *;
+@use "../utils/constants" as *;
 
 html {
   font-size: 10px;
 }
 
 body {
-  font-family: "Open Sans", sans-serif; 
+  @extend %font-primary;
   @include font(1.6rem, 2.6rem, 400);
 }
 
@@ -18,7 +20,7 @@ p {
 }
 
 h1 {
-  font-family: "Poppins", sans-serif;
+  @extend %font-additional;
   @include font(4.4rem, 5.4rem, 700);
 }
 

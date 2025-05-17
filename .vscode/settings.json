@@ -1,0 +1,5 @@
+{
+  "scss.suggest.imports": true,
+  "scss.lint.unknownAtRules": "ignore",
+  "sass.includePaths": ["style/scss/utils/_constants.scss"]
+}

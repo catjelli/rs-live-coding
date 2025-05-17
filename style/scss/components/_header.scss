@@ -1,3 +1,5 @@
+@use "../utils/mixins" as *;
+@use "../utils/placeholders" as *;
 @use "../utils/constants" as *;
 
 .header {
@@ -11,21 +13,11 @@
   align-items: center;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-  width: 303px;
-}
-
-.navigation__link {
-  padding: 0 10px;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 2.8rem;
-  color: $color-header-primary;
-}
-
 .header__buttons {
   display: flex;
   gap: 17px;
+}
+
+.header__navigation {
+  min-width: 303px;
 }

@@ -1,0 +1,22 @@
+@use "../utils/mixins" as *;
+@use "../utils/placeholders" as *;
+@use "../utils/constants" as *;
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  //   justify-content: space-between;
+  //   width: 303px;
+}
+
+.navigation__link {
+  padding: 0 10px;
+  color: $color-header-primary;
+  @include font(1.5rem, 2.8rem, 400);
+
+  &:hover {
+    color: $color-accent;
+    @extend %transition;
+  }
+}

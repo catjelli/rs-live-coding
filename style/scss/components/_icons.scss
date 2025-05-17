@@ -1,0 +1,15 @@
+@use "../utils/mixins" as *;
+@use "../utils/placeholders" as *;
+@use "../utils/constants" as *;
+
+.icon {
+  cursor: pointer;
+  display: inline-block;
+
+  &--play {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background-image: url("/assets/icons/triangle.svg");
+  }
+}
