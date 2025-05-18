@@ -6,7 +6,7 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.promo__link, h1 {
+.promo__text, .promo__link, h1 {
   font-family: "Poppins", sans-serif;
 }
 
@@ -226,15 +226,15 @@ h3 {
 }
 
 .promo__content {
-  padding-top: 80px;
+  padding-top: 83px;
   padding-right: 67px;
-  color: #544837;
+  color: #2f281e;
 }
 
 .promo__text {
   padding-top: 12px;
   padding-bottom: 40px;
-  font-family: "Poppins", sans-serif;
+  color: #544837;
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-weight: 400;
@@ -256,10 +256,15 @@ h3 {
   color: #ff7549;
 }
 
+.tools {
+  padding-top: 82px;
+}
+
 .tools__header {
   text-align: center;
   margin: auto;
   max-width: 462px;
+  color: #2f281e;
 }
 
 .contact-us {

@@ -2,8 +2,13 @@
 @use "../utils/placeholders" as *;
 @use "../utils/constants" as *;
 
+.tools {
+  padding-top: 82px;
+}
+
 .tools__header {
-    text-align: center;
-    margin: auto;
-    max-width: 462px;
+  text-align: center;
+  margin: auto;
+  max-width: 462px;
+  color: $color-header-primary;
 }
