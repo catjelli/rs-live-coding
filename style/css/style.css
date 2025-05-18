@@ -256,6 +256,12 @@ h3 {
   color: #ff7549;
 }
 
+.tools__header {
+  text-align: center;
+  margin: auto;
+  max-width: 462px;
+}
+
 .contact-us {
   background: #ffeee1;
 }

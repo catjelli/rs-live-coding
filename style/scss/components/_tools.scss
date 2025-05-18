@@ -1,0 +1,9 @@
+@use "../utils/mixins" as *;
+@use "../utils/placeholders" as *;
+@use "../utils/constants" as *;
+
+.tools__header {
+    text-align: center;
+    margin: auto;
+    max-width: 462px;
+}
