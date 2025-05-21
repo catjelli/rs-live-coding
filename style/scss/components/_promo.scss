@@ -11,13 +11,11 @@
 .promo__content {
   padding-top: 83px;
   padding-right: 67px;
-  color: $color-header-primary;
 }
 
 .promo__text {
   padding-top: 12px;
   padding-bottom: 40px;
-  color: $color-text-primary;
   @extend %font-additional;
   @include font(1.8rem, 2.8rem, 400);
 }

@@ -68,7 +68,7 @@ a {
 }
 
 p {
-  color: var(--text-primary);
+  color: #544837;
 }
 
 h1 {
@@ -76,6 +76,7 @@ h1 {
   line-height: 5.4rem;
   font-weight: 700;
   font-style: normal;
+  color: #2f281e;
 }
 
 h2 {
@@ -83,6 +84,7 @@ h2 {
   line-height: normal;
   font-weight: 700;
   font-style: normal;
+  color: #2f281e;
 }
 
 h3 {
@@ -90,6 +92,15 @@ h3 {
   line-height: 3.4rem;
   font-weight: 700;
   font-style: normal;
+  color: #2f281e;
+}
+
+h4 {
+  font-size: 2.2rem;
+  line-height: normal;
+  font-weight: 600;
+  font-style: normal;
+  color: #2f281e;
 }
 
 .visually-hidden {
@@ -122,7 +133,7 @@ h3 {
   justify-content: space-between;
 }
 .layout-4-columns > * {
-  flex-basis: 22%;
+  flex-basis: 21.7%;
 }
 
 .layout-3-columns {
@@ -159,6 +170,13 @@ h3 {
 .button--colored:hover {
   background-color: #ff7549;
   border-color: #ff7549;
+}
+
+.tools__button {
+  display: block;
+  width: 172px;
+  height: 53px;
+  margin: 0 auto;
 }
 
 .logo-path {
@@ -219,6 +237,31 @@ h3 {
   vertical-align: sub;
 }
 
+.icon__square {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon__square--purple {
+  background-image: url("/assets/icons/arrow.svg");
+  background-color: #7752be;
+}
+.icon__square--yellow {
+  background-image: url("/assets/icons/curve.svg");
+  background-color: #fab005;
+}
+.icon__square--red {
+  background-image: url("/assets/icons/heart.svg");
+  background-color: #f03e3d;
+}
+.icon__square--blue {
+  background-image: url("/assets/icons/sand-clock.svg");
+  background-color: #4dadf7;
+}
+
 .promo__wrapper {
   display: flex;
   justify-content: space-between;
@@ -228,13 +271,11 @@ h3 {
 .promo__content {
   padding-top: 83px;
   padding-right: 67px;
-  color: #2f281e;
 }
 
 .promo__text {
   padding-top: 12px;
   padding-bottom: 40px;
-  color: #544837;
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-weight: 400;
@@ -265,6 +306,14 @@ h3 {
   margin: auto;
   max-width: 462px;
   color: #2f281e;
+}
+
+.tools__wrapper {
+  padding: 70px 0 42px;
+}
+
+.tool__icon {
+  margin-bottom: 30px;
 }
 
 .contact-us {

@@ -14,3 +14,32 @@
     vertical-align: sub;
   }
 }
+
+.icon__square {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--purple {
+    background-image: url("/assets/icons/arrow.svg");
+    background-color: $color-icon-purple;
+  }
+
+  &--yellow {
+    background-image: url("/assets/icons/curve.svg");
+    background-color: $color-icon-yellow;
+  }
+
+  &--red {
+    background-image: url("/assets/icons/heart.svg");
+    background-color: $color-icon-red;
+  }
+
+  &--blue {
+    background-image: url("/assets/icons/sand-clock.svg");
+    background-color: $color-icon-blue;
+  }
+}

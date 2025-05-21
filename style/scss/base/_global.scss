@@ -16,20 +16,28 @@ a {
 }
 
 p {
-  color: var(--text-primary);
+  color: $color-text-primary;
 }
 
 h1 {
   @extend %font-additional;
   @include font(4.4rem, 5.4rem, 700);
+  color: $color-header-primary;
 }
 
 h2 {
   @include font(3.4rem, normal, 700);
+  color: $color-header-primary;
 }
 
 h3 {
   @include font(2.4rem, 3.4rem, 700);
+  color: $color-header-primary;
+}
+
+h4 {
+  @include font(2.2rem, normal, 600);
+  color: $color-header-primary;
 }
 
 .visually-hidden {
