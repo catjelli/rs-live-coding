@@ -145,6 +145,15 @@ h4 {
   flex-basis: 31%;
 }
 
+.layout-2-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-2-columns > * {
+  flex-basis: 48%;
+}
+
 .button {
   padding: 9px 25px 10px;
   font-size: 1.6rem;
@@ -375,7 +384,27 @@ h4 {
 }
 
 .contact-us {
+  padding: 62px 0 82px;
   background: #ffeee1;
+}
+
+.contact-us__form input, .contact-us__form textarea {
+  border: none;
+  background-color: #ffffff;
+  padding: 10px 22px;
+  border-radius: 5px;
+  resize: none;
+}
+.contact-us__form input:focus, .contact-us__form textarea:focus {
+  outline: 1px solid #ff9900;
+}
+
+.contact-us__line {
+  margin-bottom: 19px;
+}
+
+.contact-us__button {
+  min-width: 117px;
 }
 
 /*# sourceMappingURL=style.css.map */

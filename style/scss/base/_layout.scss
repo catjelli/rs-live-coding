@@ -14,3 +14,7 @@
 .layout-3-columns {
   @include columns(31%);
 }
+
+.layout-2-columns {
+  @include columns(48%);
+}

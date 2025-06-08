@@ -1,5 +1,29 @@
 @use "../utils/constants" as *;
+@use "../utils/placeholders" as *;
+@use "../utils/mixins" as *;
 
 .contact-us {
+  padding: 62px 0 82px;
   background: $color-background;
+}
+
+.contact-us__form {
+  input, textarea {
+    border: none;
+    background-color: $color-light;
+    padding: 10px 22px;
+    border-radius: 5px;
+    resize: none;
+    &:focus {
+      outline: 1px solid $color-accent;
+    }
+  }
+}
+
+.contact-us__line {
+  margin-bottom: 19px;
+}
+
+.contact-us__button {
+  min-width: 117px;
 }
