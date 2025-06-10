@@ -3,11 +3,25 @@
 @use "../utils/mixins" as *;
 
 .contact-us {
-  padding: 62px 0 82px;
+  padding: 62px 0 70px;
   background: $color-background;
 }
 
+.contact-us__content {
+  padding-right: 50px;
+}
+
+.contact-us__text {
+  margin-bottom: 36px;
+}
+
+.contact-us__link {
+  color: $color-text-primary;
+  @include font(2.5rem, 2.6rem, 400);
+}
+
 .contact-us__form {
+  padding-top: 16px;
   input, textarea {
     border: none;
     background-color: $color-light;

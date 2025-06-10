@@ -245,6 +245,20 @@ h4 {
   background-image: url("/assets/icons/triangle.svg");
   vertical-align: sub;
 }
+.icon--phone {
+  width: 25px;
+  height: 25px;
+  margin-right: 9px;
+  background-image: url("/assets/icons/phone.svg");
+  vertical-align: sub;
+}
+.icon--mail {
+  width: 25px;
+  height: 25px;
+  margin-right: 9px;
+  background-image: url("/assets/icons/email.svg");
+  vertical-align: sub;
+}
 
 .icon__square {
   display: block;
@@ -384,10 +398,29 @@ h4 {
 }
 
 .contact-us {
-  padding: 62px 0 82px;
+  padding: 62px 0 70px;
   background: #ffeee1;
 }
 
+.contact-us__content {
+  padding-right: 50px;
+}
+
+.contact-us__text {
+  margin-bottom: 36px;
+}
+
+.contact-us__link {
+  color: #544837;
+  font-size: 2.5rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact-us__form {
+  padding-top: 16px;
+}
 .contact-us__form input, .contact-us__form textarea {
   border: none;
   background-color: #ffffff;

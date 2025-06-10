@@ -13,6 +13,22 @@
     background-image: url("/assets/icons/triangle.svg");
     vertical-align: sub;
   }
+
+  &--phone {
+    width: 25px;
+    height: 25px;
+    margin-right: 9px;
+    background-image: url("/assets/icons/phone.svg");
+    vertical-align: sub;
+  }
+
+  &--mail {
+    width: 25px;
+    height: 25px;
+    margin-right: 9px;
+    background-image: url("/assets/icons/email.svg");
+    vertical-align: sub;
+  }
 }
 
 .icon__square {
