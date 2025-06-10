@@ -1,0 +1,33 @@
+@use "../utils/mixins" as *;
+@use "../utils/placeholders" as *;
+@use "../utils/constants" as *;
+
+.footer {
+    padding: 54px 0 72px;
+}
+
+.footer__wrapper {
+    display: flex;
+}
+
+.footer-navigation {
+    flex-grow: 1;
+}
+
+.footer-navigation__title {
+    margin-bottom: 15px;
+    @include font(2rem, 3rem, 600);
+}
+
+.footer-navigation__links {
+    @extend %font-additional;
+
+    a {
+        color: $color-text-primary;
+        @include font(1.6rem, 3.4rem, 400);
+        @extend %transition;
+        &:hover {
+            color: $color-accent;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-.promo__link, .navigation__link:hover, .logo-path, .button {
+.footer-navigation__links a, .promo__link, .navigation__link:hover, .logo-path, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -6,7 +6,7 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.promo__text, .promo__link, h1 {
+.footer-navigation__links, .promo__text, .promo__link, h1 {
   font-family: "Poppins", sans-serif;
 }
 
@@ -438,6 +438,37 @@ h4 {
 
 .contact-us__button {
   min-width: 117px;
+}
+
+.footer {
+  padding: 54px 0 72px;
+}
+
+.footer__wrapper {
+  display: flex;
+}
+
+.footer-navigation {
+  flex-grow: 1;
+}
+
+.footer-navigation__title {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.footer-navigation__links a {
+  color: #544837;
+  font-size: 1.6rem;
+  line-height: 3.4rem;
+  font-weight: 400;
+  font-style: normal;
+}
+.footer-navigation__links a:hover {
+  color: #ff9900;
 }
 
 /*# sourceMappingURL=style.css.map */
