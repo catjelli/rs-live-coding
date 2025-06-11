@@ -1,4 +1,4 @@
-.footer-navigation__links a, .promo__link, .navigation__link:hover, .logo-path, .button {
+.footer-navigation__links a, .strategy, .strategy__header, .promo__link, .navigation__link:hover, .logo-path, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -366,6 +366,13 @@ h4 {
   padding-bottom: 26px;
   border-radius: 8px;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+.strategy:hover {
+  cursor: pointer;
+  box-shadow: none;
+}
+.strategy:hover > .strategy__content > .strategy__header {
+  color: #ff9900;
 }
 
 .strategy__content {
