@@ -1,3 +1,11 @@
 @use "../utils/mixins" as *;
 @use "../utils/placeholders" as *;
 @use "../utils/constants" as *;
+
+.about-us__text {
+    padding-bottom: 45px;
+}
+
+.about-us {
+    padding-bottom: 90px;
+}

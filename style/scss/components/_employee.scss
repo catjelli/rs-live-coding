@@ -1,0 +1,35 @@
+@use "../utils/mixins" as *;
+@use "../utils/placeholders" as *;
+@use "../utils/constants" as *;
+
+.employee {
+    padding: 18px 0 35px 35px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.employee__name {
+    color: $color-text-primary;
+    margin: 0; 
+    @include font(1.6rem, 2.6rem, 700);
+}
+
+.employee__role {
+    margin: 0;
+    @include font(1.4rem, 2.6rem, 400);
+}
+
+.employee__email {
+    display: block;
+    margin: 0;
+    @include font(1.4rem, 2.6rem, 400);
+}
+
+.employee__photo {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: -10px;
+    right: -35px;
+}
