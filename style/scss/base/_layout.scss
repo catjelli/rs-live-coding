@@ -4,7 +4,12 @@
 
 .wrapper {
   margin: 0 auto;
-  max-width: $desktop-width;
+  max-width: $content-width;
+
+  @include media-laptop {
+    padding: 0 46px;
+    max-width: $tablet-width;
+  }
 }
 
 .layout-4-columns {

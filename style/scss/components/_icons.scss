@@ -12,6 +12,7 @@
     margin-right: 5px;
     background-image: url("/assets/icons/triangle.svg");
     vertical-align: sub;
+    @extend %transition;
   }
 
   &--phone {

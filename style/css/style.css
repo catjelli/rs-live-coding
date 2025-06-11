@@ -1,4 +1,4 @@
-.footer-navigation__links a, .strategy, .strategy__header, .promo__link, .navigation__link:hover, .logo-path, .button {
+.footer-navigation__links a, .strategy, .strategy__header, .promo__link, .icon--play, .navigation__link:hover, .logo-path, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -8,6 +8,15 @@
 
 .footer-navigation__links, .promo__text, .promo__link, h1 {
   font-family: "Poppins", sans-serif;
+}
+
+.hamburger::before, .hamburger::after, .hamburger__line {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 31px;
+  background-color: #173a56;
+  border-radius: 5px;
 }
 
 @font-face {
@@ -126,6 +135,12 @@ h4 {
   margin: 0 auto;
   max-width: 1197px;
 }
+@media (max-width: 1197px) {
+  .wrapper {
+    padding: 0 46px;
+    max-width: 768px;
+  }
+}
 
 .layout-4-columns {
   display: flex;
@@ -194,6 +209,31 @@ h4 {
 
 .logo-svg:hover .logo-path {
   fill: #ff9900;
+}
+
+.hamburger {
+  display: none;
+  width: 31px;
+  height: 25px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+.hamburger::before {
+  top: 0;
+  left: 0;
+}
+.hamburger::after {
+  bottom: 0;
+  left: 0;
+}
+
+.hamburger__line {
+  top: calc(50% - 1.5px);
+  display: block;
 }
 
 .header {
@@ -288,7 +328,7 @@ h4 {
 .promo__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  padding-top: 30px;
 }
 
 .promo__content {
@@ -318,6 +358,9 @@ h4 {
 }
 .promo__link:hover {
   color: #ff7549;
+}
+.promo__link:hover .icon--play {
+  background-image: url("/assets/icons/triangle-hover.svg");
 }
 
 .tools {
