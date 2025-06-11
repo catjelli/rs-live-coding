@@ -398,18 +398,22 @@ h4 {
 }
 
 .about-us__text {
-  padding-bottom: 45px;
+  padding-bottom: 30px;
 }
 
 .about-us {
-  padding-bottom: 90px;
+  padding-bottom: 100px;
 }
 
 .employee {
-  padding: 18px 0 35px 35px;
+  padding: 32px 0 35px 35px;
   border-radius: 10px;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
   position: relative;
+}
+
+.employee-wrapper {
+  padding-right: 25px;
 }
 
 .employee__name {
@@ -424,7 +428,7 @@ h4 {
 .employee__role {
   margin: 0;
   font-size: 1.4rem;
-  line-height: 2.6rem;
+  line-height: 1.8rem;
   font-weight: 400;
   font-style: normal;
 }
@@ -442,8 +446,8 @@ h4 {
   width: 160px;
   height: 160px;
   position: absolute;
-  top: -10px;
-  right: -35px;
+  top: 0px;
+  right: -60px;
 }
 
 .contact-us {
