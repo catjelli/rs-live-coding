@@ -2,6 +2,10 @@
 @use "../utils/placeholders" as *;
 @use "../utils/mixins" as *;
 
+.logo {
+  line-height: 0;
+}
+
 .logo-path {
   @extend %transition;
   cursor: pointer;
@@ -10,5 +14,11 @@
 .logo-svg:hover {
   .logo-path {
     fill: $color-accent;
+  }
+}
+
+.logo-object {
+  @include media-mobile {
+    width: 160px;
   }
 }

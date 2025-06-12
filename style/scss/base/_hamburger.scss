@@ -4,12 +4,13 @@
 
 .hamburger {
   display: none;
-  width: 31px;
+  min-width: 31px;
   height: 25px;
   position: relative;
 
   @include media-tablet {
     display: block;
+    margin: 4px 37px 0px 0px;
   }
 
   &::before {

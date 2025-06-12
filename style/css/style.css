@@ -203,6 +203,10 @@ h4 {
   margin: 0 auto;
 }
 
+.logo {
+  line-height: 0;
+}
+
 .logo-path {
   cursor: pointer;
 }
@@ -211,15 +215,22 @@ h4 {
   fill: #ff9900;
 }
 
+@media (max-width: 414px) {
+  .logo-object {
+    width: 160px;
+  }
+}
+
 .hamburger {
   display: none;
-  width: 31px;
+  min-width: 31px;
   height: 25px;
   position: relative;
 }
 @media (max-width: 768px) {
   .hamburger {
     display: block;
+    margin: 4px 37px 0px 0px;
   }
 }
 .hamburger::before {
@@ -240,20 +251,44 @@ h4 {
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
   padding: 9px 0 17px;
 }
+@media (max-width: 768px) {
+  .header {
+    padding-top: 16px;
+  }
+}
 
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .header__wrapper {
+    padding-left: 24px;
+  }
+}
+
+.header__line {
+  display: flex;
+}
 
 .header__buttons {
   display: flex;
   gap: 17px;
 }
+@media (max-width: 414px) {
+  .header__buttons {
+    display: none;
+  }
+}
 
 .header__navigation {
   min-width: 303px;
+}
+@media (max-width: 768px) {
+  .header__navigation {
+    display: none;
+  }
 }
 
 .navigation {
@@ -325,15 +360,33 @@ h4 {
   background-color: #4dadf7;
 }
 
+.promo {
+  overflow: hidden;
+}
+
 .promo__wrapper {
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
 }
+@media (max-width: 768px) {
+  .promo__wrapper {
+    padding-top: 0;
+    justify-content: flex-start;
+  }
+}
 
 .promo__content {
   padding-top: 83px;
   padding-right: 67px;
+}
+@media (max-width: 768px) {
+  .promo__content {
+    padding-top: 48px;
+    padding-right: 0;
+    flex-basis: 380px;
+    flex-shrink: 0;
+  }
 }
 
 .promo__text {
@@ -343,6 +396,17 @@ h4 {
   line-height: 2.8rem;
   font-weight: 400;
   font-style: normal;
+}
+@media (max-width: 768px) {
+  .promo__text {
+    padding-top: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo__image {
+    height: 456px;
+  }
 }
 
 .promo__button {
@@ -370,6 +434,11 @@ h4 {
   background-position: bottom;
   background-repeat: no-repeat;
 }
+@media (max-width: 768px) {
+  .tools {
+    padding-top: 74px;
+  }
+}
 
 .tools__header {
   text-align: center;
@@ -380,6 +449,11 @@ h4 {
 
 .tools__wrapper {
   padding: 70px 0 42px;
+}
+@media (max-width: 768px) {
+  .tools__wrapper {
+    padding-top: 50px;
+  }
 }
 
 .tool__icon {

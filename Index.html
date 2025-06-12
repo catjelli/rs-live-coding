@@ -11,19 +11,18 @@
   <body>
     <header class="header">
       <div class="wrapper header__wrapper">
-        <!-- <a class="logo" href="#">
-          <img src="assets/images/Logo.png" width="191" height="32" alt="Logo">
-        </a> -->
-        <span class="hamburger">
-          <span class="hamburger__line"></span>
-        </span>
-        <a class="logo" href="#">
-          <object
-            type="image/svg+xml"
-            data="./assets/images/Logo.svg"
-            class="logo-object"
-          ></object>
-        </a>
+        <div class="header__line">
+          <span class="hamburger">
+            <span class="hamburger__line"></span>
+          </span>
+          <a class="logo" href="#">
+            <object
+              type="image/svg+xml"
+              data="./assets/images/Logo.svg"
+              class="logo-object"
+            ></object>
+          </a>
+        </div>
         <nav class="header__navigation">
           <ul class="navigation reset-list">
             <li>
@@ -67,6 +66,7 @@
             </div>
           </div>
           <img
+            class="promo__image"
             src="assets/images/promo.png"
             width="643"
             height="495"

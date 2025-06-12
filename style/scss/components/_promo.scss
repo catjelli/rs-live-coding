@@ -2,16 +2,32 @@
 @use "../utils/placeholders" as *;
 @use "../utils/constants" as *;
 
+.promo {
+  overflow: hidden;
+}
+
 .promo__wrapper {
   display: flex;
   justify-content: space-between;
   // padding: 30px 0;
   padding-top: 30px;
+
+  @include media-tablet {
+    padding-top: 0;
+    justify-content: flex-start;
+  }
 }
 
 .promo__content {
   padding-top: 83px;
   padding-right: 67px;
+
+  @include media-tablet {
+    padding-top: 48px;
+    padding-right: 0;
+    flex-basis: 380px;
+    flex-shrink: 0;
+  }
 }
 
 .promo__text {
@@ -19,6 +35,17 @@
   padding-bottom: 40px;
   @extend %font-additional;
   @include font(1.8rem, 2.8rem, 400);
+
+  @include media-tablet {
+    padding-top: 6px;
+  }
+}
+
+.promo__image {
+  @include media-tablet {
+    // width: 592px;
+    height: 456px;
+  }
 }
 
 .promo__button {
