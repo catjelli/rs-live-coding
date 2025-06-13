@@ -14,6 +14,10 @@
 
 .layout-4-columns {
   @include columns(21.7%);
+
+  @include media-tablet {
+    @include columns(38%);
+  }
 }
 
 .layout-3-columns {

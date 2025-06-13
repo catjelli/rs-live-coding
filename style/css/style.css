@@ -150,6 +150,16 @@ h4 {
 .layout-4-columns > * {
   flex-basis: 21.7%;
 }
+@media (max-width: 768px) {
+  .layout-4-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .layout-4-columns > * {
+    flex-basis: 38%;
+  }
+}
 
 .layout-3-columns {
   display: flex;
@@ -452,12 +462,21 @@ h4 {
 }
 @media (max-width: 768px) {
   .tools__wrapper {
-    padding-top: 50px;
+    padding: 50px 23px 42px;
+    gap: 70px;
+    justify-content: center;
   }
 }
 
 .tool__icon {
   margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .tool__header {
+    line-height: 1rem;
+    text-align: center;
+  }
 }
 
 .strategies {

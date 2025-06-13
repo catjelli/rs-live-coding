@@ -25,10 +25,19 @@
   padding: 70px 0 42px;
 
   @include media-tablet {
-    padding-top: 50px;
+    padding: 50px 23px 42px;
+    gap: 70px;
+    justify-content: center;
   }
 }
 
 .tool__icon {
   margin-bottom: 30px;
+}
+
+.tool__header {
+  @include media-tablet {
+    line-height: 1rem;
+    text-align: center;
+  }
 }
