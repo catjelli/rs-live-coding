@@ -5,11 +5,19 @@
 .strategies {
   padding-top: 28px;
   padding-bottom: 96px;
+
+  @include media-tablet {
+    text-align: center;
+  }
 }
 
 .strategies__layout {
   margin-top: 30px;
   row-gap: 30px;
+
+  @include media-tablet {
+    margin-top: 50px;
+  }
 }
 
 .strategies__description {
@@ -19,12 +27,24 @@
 .strategies__tags {
   display: flex;
   gap: 9px;
+
+  @include media-tablet {
+    justify-content: center;
+  }
+
+  &--attached {
+    @include media-tablet {
+      justify-content: flex-start;
+    }
+  }
 }
 
 .strategy {
   padding-bottom: 26px;
   border-radius: 8px;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
   @extend %transition;
 
   &:hover {
@@ -34,13 +54,54 @@
       color: $color-accent;
     }
   }
+
+  @include media-tablet {
+    // width: 323px;
+    // width: 48%;
+    flex-basis: 48%;
+    overflow: hidden;
+  }
+
+   @include media-mobile {
+    flex-basis: 100%;
+  }
+}
+
+.strategy__image {
+  @include media-tablet {
+    width: 323px;
+    height: 171px;
+  }
+
+  &--big {
+    @include media-tablet {
+      height: 171px;
+    }
+  }
 }
 
 .strategy__content {
   padding: 18px 34px 0;
+
+  @include media-tablet {
+    padding-left: 28px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+  }
 }
 
 .strategy__header {
   margin-bottom: 30px;
   @extend %transition;
+
+  @include media-tablet {
+    text-align: left;
+    flex-grow: 1;
+  }
+
+  @include media-mobile {
+    @include font(2.1rem, 3.1rem, 700);
+  }
 }
