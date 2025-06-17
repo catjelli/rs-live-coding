@@ -512,17 +512,17 @@ h4 {
   margin-bottom: 23px;
 }
 
-.strategies__tags {
+.strategies__tags, .strategy__tags {
   display: flex;
   gap: 9px;
 }
 @media (max-width: 768px) {
-  .strategies__tags {
+  .strategies__tags, .strategy__tags {
     justify-content: center;
   }
 }
 @media (max-width: 768px) {
-  .strategies__tags--attached {
+  .strategies__tags--attached, .strategy__tags--attached {
     justify-content: flex-start;
   }
 }
@@ -533,6 +533,9 @@ h4 {
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
+}
+.strategy--hidden {
+  display: none;
 }
 .strategy:hover {
   cursor: pointer;

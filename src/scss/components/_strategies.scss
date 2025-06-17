@@ -24,7 +24,7 @@
   margin-bottom: 23px;
 }
 
-.strategies__tags {
+.strategies__tags, .strategy__tags {
   display: flex;
   gap: 9px;
 
@@ -46,6 +46,10 @@
   display: flex;
   flex-direction: column;
   @extend %transition;
+
+  &--hidden {
+    display: none;
+  }
 
   &:hover {
     cursor: pointer;
