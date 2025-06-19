@@ -18,6 +18,10 @@
   "homepage": "https://github.com/catjelli/rs-live-coding#readme",
   "description": "",
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "webpack": "^5.99.9"
+  },
+  "devDependencies": {
+    "webpack-cli": "^6.0.1"
   }
 }
