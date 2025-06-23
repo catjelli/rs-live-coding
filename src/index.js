@@ -70,6 +70,11 @@ const data = [
 window.onload = function() {
     console.log("Hello");
 
+    //Render Articles
+    if(data) {
+        renderArticlesToDom();
+    }
+
     //Tags
     addTagsClickHandler();
 }
@@ -120,4 +125,27 @@ const filterStrategyBySelectedTag = (selectedTag) => {
             }
         })
     })
+}
+
+const renderArticlesToDom = () => {
+    let strategiesWrapper = getStrategiesWrapper();
+    generateArticles(data).forEach(article => {
+        strategiesWrapper.append(article.generateArticle())
+    });
+}
+
+const getStrategiesWrapper = () => {
+    const strategiesContainer = document.querySelector('.strategies__layout');
+    strategiesContainer.innerHTML = '';
+    return strategiesContainer;
+}
+
+const generateArticles = (data) => {
+    let articles = [];
+    data.forEach(article => {
+        articles.push(new Article(article));
+    });
+
+    console.log(articles);
+    return articles;
 }
