@@ -502,6 +502,10 @@ h4 {
   margin-top: 30px;
   row-gap: 30px;
 }
+.strategies__layout:after {
+  content: "";
+  width: 31%;
+}
 @media (max-width: 768px) {
   .strategies__layout {
     margin-top: 50px;

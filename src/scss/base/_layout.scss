@@ -22,6 +22,11 @@
 
 .layout-3-columns {
   @include columns(31%);
+  &:after {
+    content: '';
+    width: 31%;
+    display: block;
+  }
 }
 
 .layout-2-columns {
