@@ -1,4 +1,5 @@
 import { Article } from "./js/Article.js";
+import { Modal } from "./js/Modal.js";
 
 const data = [
     {
@@ -145,6 +146,6 @@ const generateArticles = (data) => {
     data.forEach(article => {
         articles.push(new Article(article));
     });
-    
+
     return articles;
 }
