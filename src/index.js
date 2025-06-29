@@ -26,14 +26,14 @@ const data = [
         content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?',
         date: '01.01.2020'
     },
-    {
-        id: 4,
-        title: 'Success Steps For Your Personal Or Business Life Plus Funny Image on the Back',
-        urlToImage: 'assets/images/strategies-4.jpg',
-        tags: ['Culture', 'Art'],
-        content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?',
-        date: '01.01.2020'
-    },
+    // {
+    //     id: 4,
+    //     title: 'Success Steps For Your Personal Or Business Life Plus Funny Image on the Back',
+    //     urlToImage: 'assets/images/strategies-4.jpg',
+    //     tags: ['Culture', 'Art'],
+    //     content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?',
+    //     date: '01.01.2020'
+    // },
     {
         id: 5,
         title: 'Increasing Prosperity With Positive Thinking',
@@ -78,6 +78,10 @@ window.onload = function() {
 
     //Tags
     addTagsClickHandler();
+
+    //Generate base modal from modal class
+    addToolsClickHandler();
+
 }
 
 const addTagsClickHandler = () => {
@@ -148,4 +152,19 @@ const generateArticles = (data) => {
     });
 
     return articles;
+}
+
+const addToolsClickHandler = () => {
+    document.querySelector('.tools__button').addEventListener('click', () => {
+        generateToolsModal();
+    })
+}
+
+const generateToolsModal = () => {
+    renderModalWindow('test content tools');
+}
+
+const renderModalWindow = (content) => {
+    let modal = new Modal ('tools-modal');
+    modal.buildModal(content);
 }

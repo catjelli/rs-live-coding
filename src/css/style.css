@@ -169,6 +169,11 @@ h4 {
 .layout-3-columns > * {
   flex-basis: 31%;
 }
+.layout-3-columns:after {
+  content: "";
+  width: 31%;
+  display: block;
+}
 
 .layout-2-columns {
   display: flex;
@@ -502,10 +507,6 @@ h4 {
   margin-top: 30px;
   row-gap: 30px;
 }
-.strategies__layout:after {
-  content: "";
-  width: 31%;
-}
 @media (max-width: 768px) {
   .strategies__layout {
     margin-top: 50px;
@@ -749,6 +750,43 @@ h4 {
 }
 .footer-navigation__links a:hover {
   color: #ff9900;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(80, 80, 80, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: relative;
+  border-radius: 10px;
+  background-color: #ffffff;
+  width: 675px;
+  min-height: 120px;
+  max-height: 90%;
+  overflow: auto;
+}
+@media (max-width: 768px) {
+  .modal {
+    width: 90%;
+  }
+}
+
+.modal__close-icon {
+  position: absolute;
+  top: 30px;
+  right: 26px;
+  cursor: pointer;
+}
+.modal__close-icon svg {
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=style.css.map */
